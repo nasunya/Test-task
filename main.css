@@ -23,6 +23,10 @@ body {
   font-family: 'Montserrat';
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -97,6 +101,8 @@ body {
 .hero__img::before {
   content: url(./images/Ellipse-orange.svg);
   position: absolute;
+  top: 39%;
+  left: 20%;
 }
 
 .hero__wrap {
@@ -129,6 +135,10 @@ body {
   font-weight: normal;
   font-size: 18px;
   padding-bottom: 40px;
+}
+
+.hero__name a {
+  color: #fff;
 }
 
 .hero__data {
@@ -165,6 +175,12 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background: #fff;
+  color: #6039FF;
 }
 
 .hero__list {
@@ -197,6 +213,43 @@ body {
   font-weight: 600;
   font-size: 36px;
   color: #7FF0FF;
+}
+
+.hero__burger-pic {
+  position: absolute;
+  top: 13%;
+  left: 42%;
+}
+
+.hero__fri-pic {
+  position: absolute;
+  right: 7%;
+  bottom: -39%;
+}
+
+.hero__keks-pic {
+  position: absolute;
+  left: 12%;
+  bottom: -59%;
+}
+
+.hero__pizza-pic {
+  position: absolute;
+  left: 45%;
+  top: 147%;
+}
+
+.hero__ellip {
+  position: absolute;
+  top: 14%;
+  right: 19%;
+  width: 128px;
+  height: 128px;
+}
+
+.hero__ellip::after {
+  content: "vvv";
+  position: relative;
 }
 
 .condit {
@@ -382,6 +435,6 @@ body {
   color: #71FF1B;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 40px;
 }
 /*# sourceMappingURL=main.css.map */

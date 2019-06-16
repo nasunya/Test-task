@@ -26,7 +26,10 @@ h1,
 body  
     font-family: 'Montserrat' 
   
- 
+a 
+    text-decoration: none
+
+
 .container  
     margin   : 0 auto 
     width    : 100% 
@@ -83,6 +86,8 @@ body
     &__img::before  
         content : url(./images/Ellipse-orange.svg) 
         position: absolute 
+        top: 39%
+        left: 20%
     
     &__wrap  
         display        : flex 
@@ -105,7 +110,9 @@ body
         font-weight   : normal 
         font-size     : 18px 
         padding-bottom: 40px 
-    
+        a 
+            color: $white
+
 
     &__data  
         font-style    : normal 
@@ -132,7 +139,12 @@ body
         font-style   : normal 
         font-weight  : 600 
         font-size    : 20px 
-                                             
+        cursor: pointer
+
+        &:hover
+            background: $white
+            color: #6039FF
+
  
 
     &__list  
@@ -158,6 +170,34 @@ body
         font-size  : 36px 
         color      : #7FF0FF 
     
+    &__burger-pic
+        position: absolute
+        top: 13%
+        left: 42%
+
+    &__fri-pic 
+        position: absolute
+        right: 7%
+        bottom: -39%
+    
+    &__keks-pic 
+        position: absolute
+        left: 12%
+        bottom: -59%
+
+    &__pizza-pic
+        position: absolute
+        left: 45%
+        top: 147%
+
+    &__ellip
+        position: absolute
+        top: 14%
+        right: 19%
+        width: 128px
+        height: 128px
+
+
 
 
                             // SECTION CONDIT 
@@ -320,7 +360,7 @@ body
         color      : $green
         font-style : normal 
         font-weight: normal 
-        font-size  : 30px
+        font-size  : 40px
     
  
 
