@@ -1,0 +1,329 @@
+$white: #fff
+$green: #71FF1B
+
+    
+*  
+    box-sizing: border-box 
+   
+
+
+ul  
+    list-style-type: none 
+    padding: 0 
+    margin : 0 
+
+ 
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6  
+   margin     : 0 
+   font-weight: normal 
+  
+ 
+body  
+    font-family: 'Montserrat' 
+  
+ 
+.container  
+    margin   : 0 auto 
+    width    : 100% 
+    max-width: 940px 
+ 
+
+.section  
+    height    : 100vh 
+    min-height: 847px 
+ 
+ 
+.logo  
+    width : 102px 
+    height: 28px 
+
+
+.header  
+    display       : flex 
+    padding-bottom: 18px 
+ 
+    &__logo  
+        width: 50% 
+ 
+    &__input  
+        width          : 50% 
+        display        : flex 
+        justify-content: flex-end 
+        align-items    : flex-end
+ 
+.hero  
+    background : linear-gradient(239.35deg, #FFA41B 8.84%, #CF2C84 59.64%, #5735DE 94.78%) 
+    padding-top: 36px 
+    
+    &__money  
+        width : 542px 
+        height: 620px 
+
+    &__content  
+        display: flex 
+ 
+
+    &__left  
+        width: 50% 
+    
+
+    &__right  
+        width  : 50% 
+        display: flex 
+    
+
+    &__money  
+        position: relative 
+ 
+    &__img::before  
+        content : url(./images/Ellipse-orange.svg) 
+        position: absolute 
+    
+    &__wrap  
+        display        : flex 
+        flex-direction : column 
+        align-items    : center 
+        justify-content: center 
+ 
+
+    &__title  
+        font-style    : normal 
+        font-weight   : 800 
+        font-size     : 56px 
+        color         : $white 
+        padding-bottom: 20px 
+    
+
+    &__name  
+        color         : $white
+        font-style    : normal 
+        font-weight   : normal 
+        font-size     : 18px 
+        padding-bottom: 40px 
+    
+
+    &__data  
+        font-style    : normal 
+        font-weight   : 600 
+        font-size     : 24px 
+        color         : $white
+        padding-bottom: 40px 
+ 
+
+    &__desc  
+        text-align    : center 
+        display       : flex 
+        flex-direction: column 
+        align-items   : center 
+        padding-bottom: 40px 
+ 
+    &__button  
+        width        : 269px 
+        height       : 64px 
+        color        : #fff 
+        background   : linear-gradient(180deg, #6039FF 0%, #3A19C0 100%) 
+        border       : none 
+        border-radius: 50px 
+        font-style   : normal 
+        font-weight  : 600 
+        font-size    : 20px 
+                                             
+ 
+
+    &__list  
+        display: flex 
+    
+
+    &__item  
+        display       : flex 
+        flex-direction: column 
+        align-items   : center 
+        padding-right : 20px 
+    
+
+
+    &__place  
+        font-size     : 18px 
+        color         : $white
+        padding-bottom: 5px 
+ 
+
+    &__amount  
+        font-weight: 600 
+        font-size  : 36px 
+        color      : #7FF0FF 
+    
+
+
+                            // SECTION CONDIT 
+
+
+
+
+.condit  
+    display        : flex 
+    flex-direction : column 
+    align-items    : center 
+    justify-content: center 
+    height         : 100vh 
+    background     : linear-gradient(49.83deg, #1B0035 8.94%, #0B239F 89.08%) 
+   
+    &__result  
+        display: flex 
+    
+
+    &__item  
+        display: flex 
+        width  : 33.3% 
+ 
+
+    &__list  
+        display: flex 
+    
+
+    &__item span  
+        align-items: center 
+        display    : flex 
+ 
+
+
+    &__name  
+        font-style : normal 
+        font-weight: 800 
+        font-size  : 36px 
+        color      : $white
+    
+ 
+    &__name span  
+        font-style : normal 
+        font-weight: 800 
+        font-size  : 63px 
+        color      : $green
+
+ 
+
+    &__title  
+        text-align: center 
+    
+    &__title p  
+        font-style : normal 
+        font-weight: normal 
+        font-size  : 24px 
+        text-align : center 
+        color      : $white
+ 
+
+    &__item  
+        width        : 336px 
+        height       : 64px 
+        background   : rgba(100, 116, 255, 0.43) 
+        opacity      : 0.6 
+        border-radius: 6px 
+        margin-right : 25px 
+        position     : relative 
+    
+
+    &__item span  
+        font-style : normal 
+        font-weight: normal 
+        font-size  : 24px 
+        color      : $green
+
+ 
+
+    &__item:last-child  
+        margin: 0px 
+        
+    
+
+
+    &__img--position  
+        position: absolute 
+        top     : 28px 
+        left    : 28px 
+
+    
+    &__img  
+        padding: 0 12px 0 7px 
+    
+
+    &__name--hund::after  
+        content: "?" 
+        color  : $white
+ 
+    &__desc  
+        padding-bottom: 25px 
+ 
+
+    &__title  
+        padding-bottom: 30px 
+
+ 
+.result
+    &__left  
+        display: flex 
+        width  : 50% 
+ 
+
+    &__right  
+        display: flex 
+        width  : 50% 
+
+
+    &--bg  
+        display      : flex 
+        align-items  : center 
+        width        : 528px 
+        height       : 176px 
+        background   : rgba(100, 116, 255, 0.43) 
+        opacity      : 0.6 
+        border-radius: 6px 
+        
+ 
+
+    &__left  
+        margin-right: 25px 
+ 
+
+    &__number  
+        font-style : normal 
+        font-weight: 800 
+        font-size  : 120px 
+        color      : $green
+        padding    : 24px 20px 24px 32px 
+    
+
+    &__left span, &__right span  
+        font-style : normal 
+        font-weight: normal 
+        font-size  : 24px 
+        color      : #fff 
+    
+
+    &__data  
+        display       : flex 
+        flex-direction: column 
+        font-style    : normal 
+        font-weight   : 800 
+        font-size     : 96px 
+        color         : $green 
+        padding       : 24px 20px 24px 32px 
+ 
+
+    &__data::after  
+        content    : "мая" 
+        color      : $green
+        font-style : normal 
+        font-weight: normal 
+        font-size  : 40px 
+    
+ 
+
+
+
+
