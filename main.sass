@@ -28,12 +28,13 @@ body
   
 a 
     text-decoration: none
+    
 
 
 .container  
-    margin   : 0 auto 
-    width    : 100% 
+    margin   : 0 auto  
     max-width: 940px 
+    position: relative
  
 
 .section  
@@ -58,14 +59,28 @@ a
         display        : flex 
         justify-content: flex-end 
         align-items    : flex-end
- 
+
+    &__link 
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        color: $white
+
+        
 .hero  
-    background : linear-gradient(239.35deg, #FFA41B 8.84%, #CF2C84 59.64%, #5735DE 94.78%) 
-    padding-top: 36px 
+
+    background: url(./images/bg.svg) center center/cover no-repeat
+    position: relative
+    padding-top: 36px
     
-    &__money  
-        width : 542px 
-        height: 620px 
+
+    
+    &__money 
+        height: 632px
+        width: 100%
+        position: relative
+        
 
     &__content  
         display: flex 
@@ -73,21 +88,20 @@ a
 
     &__left  
         width: 50% 
+        display: flex
+        justify-content: center
     
 
     &__right  
         width  : 50% 
         display: flex 
     
-
-    &__money  
-        position: relative 
  
     &__img::before  
         content : url(./images/Ellipse-orange.svg) 
         position: absolute 
-        top: 39%
-        left: 20%
+        top: 22%
+      
     
     &__wrap  
         display        : flex 
@@ -101,7 +115,8 @@ a
         font-weight   : 800 
         font-size     : 56px 
         color         : $white 
-        padding-bottom: 20px 
+        padding-bottom: 20px
+        line-height: 64px 
     
 
     &__name  
@@ -109,7 +124,8 @@ a
         font-style    : normal 
         font-weight   : normal 
         font-size     : 18px 
-        padding-bottom: 40px 
+        padding-bottom: 40px
+        line-height: 36px 
         a 
             color: $white
 
@@ -120,6 +136,7 @@ a
         font-size     : 24px 
         color         : $white
         padding-bottom: 40px 
+        line-height: 32px
  
 
     &__desc  
@@ -140,6 +157,7 @@ a
         font-weight  : 600 
         font-size    : 20px 
         cursor: pointer
+        line-height: 64px
 
         &:hover
             background: $white
@@ -162,41 +180,84 @@ a
     &__place  
         font-size     : 18px 
         color         : $white
-        padding-bottom: 5px 
+        padding-bottom: 5px
+        line-height: 36px 
  
 
     &__amount  
         font-weight: 600 
         font-size  : 36px 
         color      : #7FF0FF 
+        line-height: 36px
     
     &__burger-pic
         position: absolute
-        top: 13%
-        left: 42%
+        top: 1%
+        left: 36%
 
     &__fri-pic 
         position: absolute
-        right: 7%
-        bottom: -39%
+        right: -13%
+        bottom: 20%
+
     
     &__keks-pic 
         position: absolute
-        left: 12%
-        bottom: -59%
+        bottom: -3%
+        left: -7%
 
     &__pizza-pic
         position: absolute
-        left: 45%
-        top: 147%
+        bottom: -18%
+        left: 38%
 
-    &__ellip
-        position: absolute
-        top: 14%
-        right: 19%
+
+    &__end
+        display: flex
+        margin-top: 33px
+
+    &__end-wrap
+        display: flex
+        a 
+            color: $white 
+
+    &__end-left, &__end-right
+        width: 50%
+        display: flex
+        color: $white 
+        a:hover
+            color: #7FF0FF
+     
+
+    &__end-left
+        
+        justify-content: flex-start
+    &__end-right
+        justify-content: flex-end
+        
+
+
+
+    &__ellipse
+        display: flex
         width: 128px
         height: 128px
+        background: radial-gradient(42.08px at 50% 67.13%, #6039FF 0%, #4522D1 100%)
+        border-radius: 50%
+        position: absolute
+        top: 8%
+        right: -8%
 
+.ellipse__text
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 18px
+    display: flex
+    align-items: center
+    text-align: center
+    color: #7FF0FF
+    transform: rotate(-15deg)
 
 
 
@@ -211,19 +272,32 @@ a
     align-items    : center 
     justify-content: center 
     height         : 100vh 
-    background     : linear-gradient(49.83deg, #1B0035 8.94%, #0B239F 89.08%) 
-   
+    background: url(./images/bg-blue.svg) center center/cover no-repeat 
+    margin-top: -100px
+    z-index: -1
+
     &__result  
         display: flex 
+        margin-left: -10px
+        margin-right: -10px
+        position: relative
+        z-index: 10
     
 
     &__item  
         display: flex 
         width  : 33.3% 
- 
+        background   : rgba(100, 116, 255, 0.43) 
+        border-radius: 6px 
+        margin-right: 10px
+        margin-left: 10px
+        padding: 0px 18px
+    
 
     &__list  
         display: flex 
+        margin-left: -10px
+        margin-right: -10px
     
 
     &__item span  
@@ -237,16 +311,9 @@ a
         font-weight: 800 
         font-size  : 36px 
         color      : $white
-    
- 
-    &__name span  
-        font-style : normal 
-        font-weight: 800 
-        font-size  : 63px 
-        color      : $green
+        line-height: 64px
 
- 
-
+     
     &__title  
         text-align: center 
     
@@ -256,16 +323,9 @@ a
         font-size  : 24px 
         text-align : center 
         color      : $white
- 
+        line-height: 32px
 
-    &__item  
-        width        : 336px 
-        height       : 64px 
-        background   : rgba(100, 116, 255, 0.43) 
-        opacity      : 0.6 
-        border-radius: 6px 
-        margin-right : 25px 
-        position     : relative 
+     
     
 
     &__item span  
@@ -273,35 +333,32 @@ a
         font-weight: normal 
         font-size  : 24px 
         color      : $green
+        line-height: 32px
 
  
-
-    &__item:last-child  
-        margin: 0px 
-        
-    
-
-
-    &__img--position  
-        position: absolute 
-        top     : 28px 
-        left    : 28px 
-
-    
     &__img  
-        padding: 0 12px 0 7px 
-    
-
-    &__name--hund::after  
-        content: "?" 
+        padding-right: 20px
+        
+    &__name--hund   
+        font-style : normal 
+        font-weight: 800 
+        font-size  : 63px 
+        color      : $green
+        
+    &__quest
         color  : $white
- 
+        font-style : normal 
+        font-weight: 800 
+        font-size  : 63px 
+        
     &__desc  
         padding-bottom: 25px 
  
 
     &__title  
         padding-bottom: 30px 
+        position: relative
+        z-index: 30
 
  
 .result
@@ -318,31 +375,31 @@ a
     &--bg  
         display      : flex 
         align-items  : center 
-        width        : 528px 
-        height       : 176px 
         background   : rgba(100, 116, 255, 0.43) 
-        opacity      : 0.6 
         border-radius: 6px 
+        padding: 17px 24px
+        margin-left: 10px
+        margin-right: 10px
         
  
 
-    &__left  
-        margin-right: 25px 
- 
+   
 
     &__number  
         font-style : normal 
         font-weight: 800 
         font-size  : 120px 
         color      : $green
-        padding    : 24px 20px 24px 32px 
+        line-height: 120px
+        padding-right: 16px
     
 
     &__left span, &__right span  
         font-style : normal 
         font-weight: normal 
         font-size  : 24px 
-        color      : #fff 
+        color      : #fff
+        line-height: 32px 
     
 
     &__data  
@@ -352,18 +409,18 @@ a
         font-weight   : 800 
         font-size     : 96px 
         color         : $green 
-        padding       : 24px 20px 24px 32px 
- 
+        padding-right: 16px
 
-    &__data::after  
-        content    : "мая" 
-        color      : $green
-        font-style : normal 
-        font-weight: normal 
-        font-size  : 40px
-    
- 
+        span   
+            color      : $green
+            font-style : normal 
+            font-weight: normal 
+            font-size  : 40px
+            text-align: center
+        
 
 
-
+.section__gray
+    height: 74px
+    background-color: : #E5E5E5
 
