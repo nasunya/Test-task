@@ -9,13 +9,9 @@ ul {
   margin: 0;
 }
 
-h1 h2,
-h1 h3,
-h1 h4,
-h1 h5,
-h1 h6 {
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  margin: 0;
 }
 
 body {
@@ -26,10 +22,13 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 940px;
+  max-width: 1078px;
   position: relative;
 }
 
@@ -73,6 +72,10 @@ a {
   font-size: 24px;
   line-height: 32px;
   color: #fff;
+}
+
+.header__link:hover {
+  color: #7FF0FF;
 }
 
 .hero {
@@ -137,7 +140,7 @@ a {
   font-weight: 800;
   font-size: 56px;
   color: #fff;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   line-height: 64px;
 }
 
@@ -146,7 +149,7 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
   line-height: 36px;
 }
 
@@ -159,7 +162,7 @@ a {
   font-weight: 600;
   font-size: 24px;
   color: #fff;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   line-height: 32px;
 }
 
@@ -215,7 +218,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 20px;
+  padding-right: 16px;
 }
 
 .hero__place {
@@ -267,9 +270,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   width: 100%;
-  width: 940px;
 }
 
 .hero__end-wrap a {
@@ -354,10 +355,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
-  position: relative;
-  z-index: 10;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 
 .condit__item {
@@ -367,8 +366,8 @@ a {
   width: 33.3%;
   background: rgba(100, 116, 255, 0.43);
   border-radius: 6px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   padding: 0px 18px;
 }
 
@@ -376,8 +375,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .condit__item span {
@@ -395,10 +394,12 @@ a {
   font-size: 36px;
   color: #fff;
   line-height: 64px;
+  padding-bottom: 18px;
 }
 
 .condit__title {
   text-align: center;
+  padding-bottom: 56px;
 }
 
 .condit__title p {
@@ -437,13 +438,11 @@ a {
 }
 
 .condit__desc {
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 }
 
-.condit__title {
-  padding-bottom: 30px;
-  position: relative;
-  z-index: 30;
+.condit__content {
+  margin-top: 70px;
 }
 
 .result__left {
@@ -470,8 +469,8 @@ a {
   background: rgba(100, 116, 255, 0.43);
   border-radius: 6px;
   padding: 17px 24px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .result__number {
@@ -516,6 +515,6 @@ a {
 
 .section__gray {
   height: 74px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 /*# sourceMappingURL=main.css.map */
