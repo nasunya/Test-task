@@ -179,6 +179,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 40px;
+  position: relative;
+  z-index: 5;
 }
 
 .hero__button {
@@ -307,11 +309,12 @@ p {
   display: flex;
   width: 128px;
   height: 128px;
-  background: radial-gradient(42.08px at 50% 67.13%, #6039FF 0%, #4522D1 100%);
+  background: radial-gradient(70px at 50% 50%, #6039FF 0%, #4522D1 100%);
   border-radius: 50%;
   position: absolute;
-  top: 8%;
-  right: -8%;
+  top: 11%;
+  right: -4%;
+  z-index: 1;
 }
 
 .ellipse__text {
